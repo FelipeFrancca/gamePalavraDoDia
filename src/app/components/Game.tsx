@@ -32,7 +32,7 @@ export default function Game() {
       const correctWord = words[currentWordIndex];
       const newKeyColors = { ...keyColors };
 
-      currentGuess.forEach((letter, index) => {
+      currentGuess.forEach((letter) => {
         if (correctWord.includes(letter)) {
           newKeyColors[letter] = "yellow";
         } else {
