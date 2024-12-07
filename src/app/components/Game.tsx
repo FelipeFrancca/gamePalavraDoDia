@@ -10,6 +10,7 @@ import UsImg from '../../assets/img/us.png'
 
 
 const words = ["PADRE", "ANEIS", "NOIVA"];
+const basePath = process.env.NODE_ENV === 'production' ? '/gamePalavraDoDia' : '';
 
 export default function Game() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -158,7 +159,7 @@ export default function Game() {
     return (
       <div className="w-96 h-96 flex flex-col items-center justify-center">
         <h1 className="text-4xl font-bold mb-6">Quer casar comigo?</h1>
-        <Image className="w-52 p-5" src={LoveImg} alt="Flork amoroso" />
+        <Image className="w-52 p-5" src={`${basePath}${LoveImg}`} alt="Flork amoroso" />
         <div className="relative w-full flex items-center space-x-4 p-5">
           <button
             onClick={handleYesClick}
@@ -183,7 +184,7 @@ export default function Game() {
     return (
       <div className="w-96 h-96 flex flex-col items-center justify-center">
         <h1 className="text-3xl font-bold items-center flex justify-center">Escolheu a melhor opção!</h1>
-        <Image className="w-64" src={UsImg} alt="Flork juntos" />
+        <Image className="w-64" src={`${basePath}${UsImg}`} alt="Flork juntos" />
         <button
           onClick={() => window.location.reload()}
           className="mt-6 px-4 py-2 bg-blue-500 text-white rounded"
