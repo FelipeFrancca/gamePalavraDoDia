@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/gamePalavraDoDia/static/css/main.1671f7cc.css",
+    "main.js": "/gamePalavraDoDia/static/js/main.7839587a.js",
+    "static/media/us.png": "/gamePalavraDoDia/static/media/us.319d886028a94f24d34b.png",
+    "static/media/love.png": "/gamePalavraDoDia/static/media/love.0c16b89f4521093f5e4d.png",
+    "index.html": "/gamePalavraDoDia/index.html",
+    "main.1671f7cc.css.map": "/gamePalavraDoDia/static/css/main.1671f7cc.css.map",
+    "main.7839587a.js.map": "/gamePalavraDoDia/static/js/main.7839587a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1671f7cc.css",
+    "static/js/main.7839587a.js"
+  ]
+}
